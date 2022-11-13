@@ -15,8 +15,10 @@ public class Main {
         obj1.checkString("Mumbai","Mumbai");
         System.out.println("--------------------------------");
         obj1.leapYear(2000);
+        System.out.println("--------------------------------");
+        obj1.getName(args);
+        System.out.println("--------------------------------");
     }
-
 
 
     private void displayMessage() {
@@ -47,4 +49,7 @@ public class Main {
       else
               System.out.println(year+" is not a leap year");
 }
+    private void getName(String[] args) {
+        System.out.println(args[0]);
+    }
 }
